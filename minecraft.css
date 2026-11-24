@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-family: "Bowlby One", sans-serif;
+    margin: 0;
+}
+.logo h1:hover{
+    color: rgb(184, 5, 255)
+}
+header a{
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    font-size: 27px;
+    padding: 15px;
+    
+}
+a{
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid #b84aff;
+}
+a:hover{
+    background-color: #b000ff;
+    box-shadow: 0 0 15px #a000ff;
+}
+h1{
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.10;
+    text-align: center;
+    color: #ffffff;
+}
+p{
+    margin-top: 30px;
+    color: aliceblue;
+    line-height: 1.8;
+    font-size: 18px;
+}
+footer{
+    padding: 35px 10%;
+    text-align: center;
+    background: #0b0915;
+}
+
+footer h2{
+    color: aliceblue;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 7px solid #29213e;
+}
+main {
+    background-color: #000000;
+    min-height: 80vh;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+main h1{
+    font-family: "Orbitron", sans-serif;
+
+}
+main p{
+    font-family: "Montserrat", sans-serif;
+}
+main a{
+    font-family: "Montserrat", sans-serif;
+}
+main img{
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+}
+.carta-imagen {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #a000ff;
+    border-radius: 15px;
+}
+.carta-imagen img {
+    width: 100%;
+    height: 870px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.carta-info {
+    width: 45%;
+    padding: 30px;
+    border: 1px solid #a000ff;
+    border-radius: 15px;
+}
+
+.carta-info h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+
+.precio {
+    font-size: 30px;
+    font-weight: bold;
+    color: #a000ff;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+/* =========================
+   CARRITO LATERAL
+========================= */
+
+#carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 380px;
+    max-width: 90%;
+    height: 100vh;
+
+    background: linear-gradient(145deg, #16121e, #0d0d12);
+    color: white;
+    z-index: 9999;
+
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    border-left: 2px solid #8700ff;
+    box-shadow: -10px 0 35px rgba(135, 0, 255, 0.20);
+
+    transform: translateX(100%);
+    visibility: hidden;
+
+    transition: transform 0.3s ease, visibility 0.3s;
+}
+
+/* Cuando se abre */
+
+#carrito.abierto {
+    transform: translateX(0);
+    visibility: visible;
+}
+
+/* =========================
+   CABECERA
+========================= */
+
+.carrito-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(184, 74, 255, 0.4);
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+}
+
+.carrito-header h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 22px;
+    color: #c77dff;
+    text-shadow: 0 0 10px rgba(135, 0, 255, 0.4);
+}
+
+.carrito-header button {
+    background: rgba(135, 0, 255, 0.1);
+    color: white;
+
+    border: 1px solid #8700ff;
+    border-radius: 8px;
+
+    width: 38px;
+    height: 38px;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.carrito-header button:hover {
+    background: #8700ff;
+    transform: rotate(90deg);
+    box-shadow: 0 0 15px #8700ff;
+}
+
+/* =========================
+   LISTA DE PRODUCTOS
+========================= */
+
+#lista-carrito {
+    padding: 0;
+    list-style: none;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    padding: 15px;
+    margin-bottom: 12px;
+
+    background: rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(184, 74, 255, 0.2);
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+#lista-carrito li:hover {
+    border-color: #b84aff;
+    box-shadow: 0 0 12px rgba(135, 0, 255, 0.15);
+}
+
+/* Información del producto */
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.item-info strong {
+    font-family: "Orbitron", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.item-info span {
+    color: #c77dff;
+    font-weight: bold;
+}
+
+/* Eliminar producto */
+
+.btn-eliminar {
+    background: rgba(255, 50, 70, 0.12);
+    color: #ff5252;
+
+    border: 1px solid #ff5252;
+    padding: 8px 10px;
+
+    cursor: pointer;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn-eliminar:hover {
+    background: #ff5252;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 82, 82, 0.4);
+}
+
+/* =========================
+   PIE DEL CARRITO
+========================= */
+
+.carrito-footer {
+    margin-top: 30px;
+    border-top: 1px solid rgba(184, 74, 255, 0.4);
+    padding-top: 20px;
+}
+
+.carrito-footer p {
+    font-family: "Orbitron", sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#total-precio {
+    color: #c77dff;
+    text-shadow: 0 0 8px rgba(135, 0, 255, 0.4);
+}
+
+/* Finalizar compra */
+
+#checkout {
+    width: 100%;
+    padding: 14px;
+
+    background: linear-gradient(90deg, #8700ff, #b84aff);
+    color: white;
+
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#checkout:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(135, 0, 255, 0.6);
+    background: linear-gradient(90deg, #a100ff, #d080ff);
+}
+
+/* =========================
+   BOTÓN COMPRAR AHORA
+========================= */
+
+.add-to-cart {
+    display: inline-block;
+
+    background: linear-gradient(135deg, #8700ff, #a52aff);
+    color: white;
+
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+    padding: 15px 30px;
+
+    border-radius: 8px;
+    border: 2px solid #b84aff;
+
+    margin-top: 30px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-to-cart:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(135, 0, 255, 0.5);
+    background: #a52aff;
+}
+
+
+.descripcion {
+    margin-top: 30px;
+}
+
+.descripcion h3 {
+    color: white;
+}

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(252, 249, 249);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-family: "Bowlby One", sans-serif;
+    margin: 0;
+}
+.logo h1:hover{
+    color: rgb(184, 5, 255)
+}
+header a{
+    font-family: "Orbitron", sans-serif;
+    text-decoration: none;
+    font-size: 27px;
+    padding: 15px;
+    
+}
+a{
+    display: inline-block;
+    background-color: #000000;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid #b84aff;
+}
+a:hover{
+    background-color: #b000ff;
+    box-shadow: 0 0 15px #a000ff;
+}
+h1{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 1.10;
+    text-align: center;
+    color: #ffffff;
+}
+main{
+    background-color: #000000;
+    min-height: auto;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+main img{
+    object-fit: contain;
+}
+
+.juego {
+    width: 420px;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.juego img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.infojuego {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, #000);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.infojuego h3 {
+    font-size: 50px;
+    font-family: "Orbitron", sans-serif;
+    margin-bottom: 40px;
+}
+
+.juego:hover img {
+    transform: scale(1.1);
+}
+
+.juego:hover .infojuego {
+    opacity: 1;
+}
+
+.infojuego a {
+    background-color: #B805FF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+footer{
+    padding: 35px 10%;
+    text-align: center;
+    background: #0b0915;
+}
+
+footer h2{
+    color: aliceblue;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+footer p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.copyright {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 7px solid #29213e;
+}
+.boton{
+    display: inline-block;
+    background-color: #8700ff;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid #b84aff;
+    margin-top: 50px;
+}
+.boton:hover{
+    background-color: #b000ff;
+    box-shadow: 0 0 15px #a000ff;
+}
+.imagen{
+    width: auto;
+    height: auto;
+}
+.imagen img{
+    width: 700px;
+    height: 700px;
+}
